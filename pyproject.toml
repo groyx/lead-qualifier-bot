@@ -1,0 +1,17 @@
+[project]
+name = "lead-qualifier-bot"
+version = "0.1.0"
+description = "Telegram bot that qualifies inbound leads and pushes them to CRM"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-asyncio>=1.0"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
